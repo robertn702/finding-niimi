@@ -30,6 +30,8 @@ app.use(flash());
 require('./routes/pages/pages')(app);
 require('./routes/auth/passport_local')(app, passport, models);
 require('./routes/auth/passport_facebook')(app, passport, models);
+// require('./routes/auth/passport_strava')(app, passport, models);
+// require('./routes/auth/passport_fitbit')(app, passport, models);
 
 app.use(express.static(__dirname + '/../web/dist'));
 
